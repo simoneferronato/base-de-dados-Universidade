@@ -1,15 +1,15 @@
--- EXERCICIO 2 Crie uma base de dados Universidade com as tabelas a seguir:
---Alunos (MAT, nome, endereço, cidade)
---Disciplinas (COD_DISC, nome_disc, carga_hor)
---Professores (COD_PROF, nome, endereço, cidade)
---Turma (COD_DISC, COD_TURMA, COD_PROF, ANO, horário)
--- COD_DISC referencia Disciplinas
--- COD_PROF referencia Professores
---Histórico (MAT, COD_DISC, COD_TURMA, COD_PROF, ANO, frequência, nota)
--- MAT referencia Alunos
--- COD_DISC, COD_TURMA, COD_PROF, ANO referencia Turma
+Uma base de dados - Universidade com as tabelas a seguir:
 
---2 - 
+Alunos (MAT, nome, endereço, cidade)
+Disciplinas (COD_DISC, nome_disc, carga_hor)
+Professores (COD_PROF, nome, endereço, cidade)
+Turma (COD_DISC, COD_TURMA, COD_PROF, ANO, horário)
+COD_DISC referencia Disciplinas
+COD_PROF referencia Professores
+Histórico (MAT, COD_DISC, COD_TURMA, COD_PROF, ANO, frequência, nota)
+MAT referencia Alunos
+COD_DISC, COD_TURMA, COD_PROF, ANO referencia Turma
+
 
 create database Universidade;
 	use Universidade;
@@ -92,8 +92,6 @@ insert into historico values(2015010103, 'WEB', 1, 192011, 2015, 5, 5);
 insert into historico values(2015010104, 'ENG',1, 122135, 2015, 5, 6.2);
 insert into historico values(2015010105, 'BD', 2, 212131, 2015, 4, 4.5);
 insert into historico values(2015010106, 'WEB', 1, 192011, 2015, 8, 5.5);
-
-
 
 
 
